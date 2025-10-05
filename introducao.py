@@ -52,3 +52,4 @@ print(math.pi)
 print(math.sqrt(4)) # raíz quadrada
 
 print(dir(math)) # mostra as funcionalidades de um modulo
+
