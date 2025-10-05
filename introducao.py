@@ -1,55 +1,56 @@
-x = 10 + 5
-
-print(type(x)) # tipo da variavel
-print("x vale:", x) # console.log
+# --- tipos de dados ---
+x = 10 + 5 
+print(type(x)) # <class 'int'>
+print("x vale:", x) 
 
 y = 33.33
-
-print(type(y))
+print(type(y)) # <class 'float'>
 
 a = "facef"
-print(type(a))
+print(type(a)) # <class 'str'>
 
+
+# --- exibir ---
 idade = 18
 altura = 1.75
 
-print("A altura é", altura, "e a idade é", idade)
-print(f"A altura é {altura} e a idade é {idade}")
+# tradicional
+print("A altura é", altura, "e a idade é", idade) 
+
+# f-string
+print(f"A altura é {altura} e a idade é {idade}") 
 
 
-# input
-nome = input("digite seu nome: ") #prompt
-print(f"seu nome é {nome}")
+# --- entrada de dados ---
+nome = input("digite seu nome: ") # input retorna uma string
+print(f"seu nome é {nome}") 
 
-
-# input de um 'número'
+# exemplo de um 'número'
 numero = input("Digite um número: ")
 print(f"O número é {numero}")
-print(type(numero)) # string
+print(type(numero)) # <class 'str'>
+
+# --- converter o tipo ---
+
+n = int(input("Digite um valor inteiro: ")) # converte para inteiro
+
+k = float(input("Digite um valor decimal: ")) # converte para reais
 
 
-# arrendondando numero
+# --- arrendondar número ---
 t = 7 / 3
-print(f"Número arrendondado é {round(t, 2)}")
+
+print(f"Número arredondado é {round(t, 2)}") # com 2 casas decimais
 print(f"Número original é {t}")
 
 
-# inteiro no input
-n = int(input("Digite um valor inteiro: "))
-n = n * 2
-print(f"O valor dobrado de n é: {n}")
+# --- módulo de matemática ---
+import math
 
-"""
-documentacao
-"""
+print(math.e) # const euler
+print(math.pi) # const pi
 
-import math # importar um modulo
+print(math.sqrt(4)) # raiz quadrada
 
-print(math.e)
-
-print(math.pi)
-
-print(math.sqrt(4)) # raíz quadrada
-
-print(dir(math)) # mostra as funcionalidades de um modulo
-
+# lista as funções
+print(dir(math))
