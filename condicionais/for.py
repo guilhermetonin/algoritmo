@@ -12,13 +12,13 @@ for n in nomes:
   print(n)
 
 for y in range(5):
-  print("Valor: ", y)
+  print('Valor: ', y)
 # de 0 a 4
 
 for a in range(5,10):
-  print("Valor: ", a)
+  print('Valor: ', a)
 # de 5 a 9
 
 for b in range(2,10,2):
-  print("Valor: ", b)
+  print('Valor: ', b)
 # 2, 4, 6, 8

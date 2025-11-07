@@ -1,44 +1,28 @@
-# --- busca de elementos ---
 lista = [10, 20, 30, 40, 50]
 
+# --- if ... in ... ---
+# verifica se um valor está presente na lista
 if 30 in lista:
-  print("Encontrado.")
+    print('encontrado.') 
 else:
-  print("Não encontrado :(")
+    print('não encontrado ')
 
 
-# --- inverte ---
-lista = [1, 2, 3, 5, 4]
+# --- reverse() ---
+# modifica a lista invertendo ela
 lista.reverse()
-print(lista)
+print(lista) # [50, 40, 30, 20, 10]
 
 
-# --- ordena crescente ---
+# --- sort() ---
+# ordena a lista em ordem crescente
 lista.sort() 
-print(lista)
+print(lista) # [10, 20, 30, 40, 50]
 
 
-# --- remove um elemento específico ---
-nome = ["guilherme", "tonin", "teste"]
-nome.remove("teste")
-print(nome)
+# --- remove() ---
+# busca o primeiro valor correspondente e o remove
+nome = ['guilherme', 'tonin', 'teste']
 
-
-# --- remove e retorna ---
-# último elemento
-nomes = ["carlos", "miguel", "gaules", "fabio"]
-
-ultimo = nomes.pop()
-
-print(nomes) # ["carlos", "miguel", "gaules"]
-print(ultimo) # "fabio"
-
-
-# primeiro elemento
-nomes = ["raphael", "vitor", "flaco"]
-
-primeiro = nomes.pop(0) # índice 0
-
-print(nomes) # ["vitor", "flaco"]
-print(primeiro) # "raphael"
-
+nome.remove('teste')
+print(nome) # ['guilherme', 'tonin']
