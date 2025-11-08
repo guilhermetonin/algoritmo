@@ -14,7 +14,7 @@ Descontos adicionais:
   Estudantes: +5% de desconto adicional
   Sênior: +7% de desconto adicional
 
-Retorne:
+Faça um programa que:
   1. Solicite a idade do cliente e o valor total da compra
   2. Calcule o valor final com os descontos
   3. Informe:
